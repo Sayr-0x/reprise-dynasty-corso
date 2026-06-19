@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dynasty 8 — Agence immobilière de prestige sur Los Santos. Villas, appartements, hangars et entrepôts à vendre sur serveur RP." />
+  <title>Dynasty 8 · Real Estate — Los Santos</title>
+
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ====================== PRELOADER ====================== -->
+  <div id="preloader">
+    <div class="preloader-mark">
+      <span class="d8">D8</span>
+      <span class="line"></span>
+      <span class="tag">DYNASTY&nbsp;8</span>
+    </div>
+    <span class="preloader-pct"><i id="pctNum">0</i>%</span>
+    <span class="preloader-curtain preloader-curtain--t"></span>
+    <span class="preloader-curtain preloader-curtain--b"></span>
+  </div>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="brand" data-tab="accueil">
+        <span class="brand__mark">D8</span>
+        <span class="brand__txt">DYNASTY&nbsp;8<small>REAL&nbsp;ESTATE · LOS&nbsp;SANTOS</small></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#" class="nav__link is-active" data-tab="accueil">Accueil</a>
+        <a href="#" class="nav__link" data-tab="dossier">Le Dossier</a>
+        <a href="#" class="nav__link" data-tab="catalogue">Catalogue</a>
+        <a href="#" class="nav__link" data-tab="stockage">Stockage</a>
+        <a href="#" class="nav__link" data-tab="services">Services</a>
+        <a href="#" class="nav__link" data-tab="equipe">Équipe</a>
+        <a href="#" class="nav__link" data-tab="contact">Contact</a>
+      </nav>
+
+      <button class="nav__cta" data-tab="contact">Nous rejoindre</button>
+      <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="app">
+
+    <!-- ============================================================= -->
+    <!-- ACCUEIL                                                         -->
+    <!-- ============================================================= -->
+    <section class="tab is-active" id="accueil">
+      <div class="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__veil"></div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">EST. 202X · LOS SANTOS, SAN ANDREAS</p>
+          <h1 class="hero__title">L'immobilier<br><em id="rotWord">de dynastie</em></h1>
+          <p class="hero__lead">Villas de Vinewood Hills, penthouses de Del Perro, domaines de Rockford et terrains à bâtir. Dynasty&nbsp;8 façonne le patrimoine des plus grandes fortunes de l'État.</p>
+          <div class="hero__actions">
+            <button class="btn btn--gold" data-tab="catalogue">Découvrir les biens</button>
+            <button class="btn btn--ghost" data-tab="dossier">Consulter le dossier</button>
+          </div>
+        </div>
+        <div class="hero__scroll"><span></span>Faites défiler</div>
+      </div>
+
+      <!-- Bandeau chiffres -->
+      <div class="stats container">
+        <div class="stat"><span class="stat__num" data-count="142">0</span><span class="stat__lbl">Biens vendus</span></div>
+        <div class="stat"><span class="stat__num" data-count="38">0</span><span class="stat__lbl">Parcelles disponibles</span></div>
+        <div class="stat"><span class="stat__num" data-count="9">0</span><span class="stat__lbl">Quartiers couverts</span></div>
+        <div class="stat"><span class="stat__num" data-count="100">0</span><span class="stat__lbl">% RP · sur-mesure</span></div>
+      </div>
+
+      <!-- Bandeau défilant -->
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>Vinewood Hills <b>✦</b> Rockford Hills <b>✦</b> Del Perro <b>✦</b> Mirror Park <b>✦</b> Richman <b>✦</b> Vespucci <b>✦</b> Paleto Bay <b>✦</b> L'immobilier de dynastie <b>✦</b>&nbsp;</span>
+          <span aria-hidden="true">Vinewood Hills <b>✦</b> Rockford Hills <b>✦</b> Del Perro <b>✦</b> Mirror Park <b>✦</b> Richman <b>✦</b> Vespucci <b>✦</b> Paleto Bay <b>✦</b> L'immobilier de dynastie <b>✦</b>&nbsp;</span>
+        </div>
+      </div>
+
+      <!-- Intro -->
+      <div class="container section">
+        <div class="split">
+          <div class="split__media">
+            <div class="frame frame--portrait" style="--img:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop')"></div>
+          </div>
+          <div class="split__body">
+            <p class="kicker">L'agence</p>
+            <h2 class="h2">Une signature, un standing.</h2>
+            <p>Dynasty&nbsp;8 n'est pas une simple agence : c'est une institution du paysage immobilier de Los Santos. Nous accompagnons acquéreurs, investisseurs et familles dans la constitution d'un patrimoine d'exception — de la garçonnière en bord de plage au domaine sécurisé sur les hauteurs.</p>
+            <ul class="ticklist">
+              <li>Estimations gratuites et confidentielles</li>
+              <li>Mandats exclusifs sur les biens les plus prestigieux</li>
+              <li>Gestion locative & conciergerie 24/7</li>
+              <li>Montage de projets sur terrains constructibles</li>
+            </ul>
+            <button class="btn btn--dark" data-tab="services">Nos services</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sélection -->
+      <div class="container section">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Sélection du mois</p>
+            <h2 class="h2">Biens à la une</h2>
+          </div>
+          <button class="link-more" data-tab="catalogue">Voir tout le catalogue →</button>
+        </div>
+        <div class="grid grid--cards" id="featuredGrid"></div>
+      </div>
+
+      <!-- Quartiers -->
+      <div class="container section">
+        <div class="section__head"><div><p class="kicker">Territoire</p><h2 class="h2">Nos quartiers de prédilection</h2></div></div>
+        <div class="hoods" id="hoods"></div>
+      </div>
+
+      <!-- Témoignages -->
+      <div class="container section">
+        <div class="section__head"><div><p class="kicker">Ils nous ont fait confiance</p><h2 class="h2">Paroles de clients</h2></div></div>
+        <div class="testimonials" id="testimonials"></div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-band">
+        <div class="container cta-band__inner">
+          <h2>Vous avez un bien à vendre&nbsp;?</h2>
+          <p>Confiez-le à la première agence de prestige de l'État. Estimation sous 48h.</p>
+          <button class="btn btn--gold" data-tab="contact">Demander une estimation</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- LE DOSSIER                                                      -->
+    <!-- ============================================================= -->
+    <section class="tab" id="dossier">
+      <div class="page-hero">
+        <div class="container">
+          <p class="kicker kicker--center">Document de reprise · Confidentiel</p>
+          <h1 class="page-hero__title">Le Dossier Dynasty&nbsp;8</h1>
+          <p class="page-hero__sub">Tout ce qu'il faut pour comprendre, reprendre et faire prospérer l'agence : concept, identité, modèle économique, organisation et feuille de route.</p>
+        </div>
+      </div>
+
+      <div class="container section">
+        <div class="dossier-layout">
+          <!-- Sommaire sticky -->
+          <aside class="toc">
+            <p class="toc__title">Sommaire</p>
+            <a href="#d-vision" class="toc__link">01 — Vision & concept</a>
+            <a href="#d-identite" class="toc__link">02 — Identité de marque</a>
+            <a href="#d-modele" class="toc__link">03 — Modèle économique</a>
+            <a href="#d-offres" class="toc__link">04 — Offres & tarifs</a>
+            <a href="#d-orga" class="toc__link">05 — Organisation & rôles</a>
+            <a href="#d-process" class="toc__link">06 — Process de vente RP</a>
+            <a href="#d-regles" class="toc__link">07 — Règlement interne</a>
+            <a href="#d-roadmap" class="toc__link">08 — Feuille de route</a>
+          </aside>
+
+          <div class="dossier-content">
+            <article id="d-vision" class="doc-block">
+              <span class="doc-num">01</span>
+              <h2 class="h2">Vision &amp; concept</h2>
+              <p>Dynasty&nbsp;8 est une agence immobilière de prestige opérant en immersion totale sur le serveur RP. Sa raison d'être&nbsp;: <strong>donner une réalité économique et narrative à la propriété</strong>. Acheter un bien ne doit pas être une ligne dans un menu, mais une étape de vie — une visite, une négociation, une signature, une remise de clés.</p>
+              <div class="callout">
+                <p><strong>Pitch en une phrase.</strong> « Dynasty&nbsp;8 transforme chaque mètre carré de Los Santos en histoire&nbsp;: nous vendons du patrimoine, pas seulement des murs. »</p>
+              </div>
+              <h3 class="h3">Objectifs</h3>
+              <div class="cards3">
+                <div class="mini-card"><h4>Immersion</h4><p>Créer des scènes RP riches autour de l'achat et de la vente de biens.</p></div>
+                <div class="mini-card"><h4>Économie</h4><p>Faire circuler l'argent du serveur et structurer un marché immobilier crédible.</p></div>
+                <div class="mini-card"><h4>Prestige</h4><p>Imposer une marque reconnaissable, premium et désirable sur tout l'État.</p></div>
+              </div>
+            </article>
+
+            <article id="d-identite" class="doc-block">
+              <span class="doc-num">02</span>
+              <h2 class="h2">Identité de marque</h2>
+              <p>Le positionnement est <strong>luxe, sobriété et autorité</strong>. La marque doit inspirer la confiance des grandes fortunes comme celle des primo-accédants.</p>
+              <div class="brandkit">
+                <div class="swatches">
+                  <div class="swatch" style="background:#0a0a0c"><span>Noir Onyx<br>#0A0A0C</span></div>
+                  <div class="swatch" style="background:#c8a24a"><span class="dark">Or Dynasty<br>#C8A24A</span></div>
+                  <div class="swatch" style="background:#f4f1ea"><span class="dark">Ivoire<br>#F4F1EA</span></div>
+                  <div class="swatch" style="background:#1c1c22"><span>Graphite<br>#1C1C22</span></div>
+                </div>
+                <ul class="ticklist">
+                  <li><strong>Logotype&nbsp;:</strong> monogramme « D8 » + nom en capitales espacées.</li>
+                  <li><strong>Typographies&nbsp;:</strong> Cinzel / Cormorant (titres) — Inter (textes).</li>
+                  <li><strong>Ton&nbsp;:</strong> élégant, mesuré, jamais racoleur.</li>
+                  <li><strong>Signature&nbsp;:</strong> « L'immobilier de dynastie. »</li>
+                </ul>
+              </div>
+            </article>
+
+            <article id="d-modele" class="doc-block">
+              <span class="doc-num">03</span>
+              <h2 class="h2">Modèle économique</h2>
+              <p>L'agence génère ses revenus sur plusieurs flux complémentaires, pour ne jamais dépendre d'une seule source.</p>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead><tr><th>Source de revenu</th><th>Principe</th><th>Marge indicative</th></tr></thead>
+                  <tbody>
+                    <tr><td>Commission sur vente</td><td>% prélevé sur chaque transaction conclue</td><td>5 – 8&nbsp;%</td></tr>
+                    <tr><td>Mandat exclusif</td><td>Forfait pour la mise en avant prioritaire d'un bien</td><td>Forfait fixe</td></tr>
+                    <tr><td>Gestion locative</td><td>Honoraires mensuels sur loyers encaissés</td><td>10&nbsp;%</td></tr>
+                    <tr><td>Promotion / construction</td><td>Marge sur projets bâtis à partir de terrains</td><td>15 – 25&nbsp;%</td></tr>
+                    <tr><td>Conciergerie & prestige</td><td>Abonnement services haut de gamme</td><td>Forfait</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="callout callout--gold"><p><strong>Règle d'or.</strong> Une trésorerie de réserve équivalente à 3 mandats moyens est conservée en permanence pour racheter des biens stratégiques au comptant.</p></div>
+            </article>
+
+            <article id="d-offres" class="doc-block">
+              <span class="doc-num">04</span>
+              <h2 class="h2">Offres &amp; tarifs</h2>
+              <p>Trois formules pour les vendeurs, lisibles et premium.</p>
+              <div class="pricing">
+                <div class="price-card">
+                  <p class="price-card__name">Essentiel</p>
+                  <p class="price-card__price">5%<small>de commission</small></p>
+                  <ul><li>Mise en vente au catalogue</li><li>Photos du bien</li><li>Mise en relation acheteurs</li><li>Accompagnement signature</li></ul>
+                </div>
+                <div class="price-card price-card--feat">
+                  <span class="badge">Le plus choisi</span>
+                  <p class="price-card__name">Signature</p>
+                  <p class="price-card__price">7%<small>de commission</small></p>
+                  <ul><li>Tout l'Essentiel</li><li>Mandat semi-exclusif</li><li>Mise en avant « à la une »</li><li>Visites organisées par l'agence</li><li>Négociation déléguée</li></ul>
+                </div>
+                <div class="price-card">
+                  <p class="price-card__name">Prestige</p>
+                  <p class="price-card__price">Sur devis</p>
+                  <ul><li>Mandat exclusif total</li><li>Home-staging & shooting</li><li>Acheteurs qualifiés VIP</li><li>Conciergerie post-vente</li><li>Confidentialité absolue</li></ul>
+                </div>
+              </div>
+            </article>
+
+            <article id="d-orga" class="doc-block">
+              <span class="doc-num">05</span>
+              <h2 class="h2">Organisation &amp; rôles</h2>
+              <p>Hiérarchie claire, du PDG aux agents juniors. Chaque grade a des responsabilités et un palier de commission.</p>
+              <div class="org">
+                <div class="org__row"><span class="org__role">PDG / Directeur</span><span class="org__desc">Stratégie, finances, recrutement, mandats prestige.</span></div>
+                <div class="org__row"><span class="org__role">Directeur commercial</span><span class="org__desc">Pilote l'équipe de vente et les objectifs.</span></div>
+                <div class="org__row"><span class="org__role">Agent senior</span><span class="org__desc">Mandats exclusifs, négociations à fort enjeu.</span></div>
+                <div class="org__row"><span class="org__role">Agent immobilier</span><span class="org__desc">Visites, ventes courantes, prospection.</span></div>
+                <div class="org__row"><span class="org__role">Agent junior</span><span class="org__desc">Accueil, prise de mandats, apprentissage.</span></div>
+                <div class="org__row"><span class="org__role">Gestionnaire locatif</span><span class="org__desc">Suivi des loyers et de la conciergerie.</span></div>
+              </div>
+            </article>
+
+            <article id="d-process" class="doc-block">
+              <span class="doc-num">06</span>
+              <h2 class="h2">Process de vente RP</h2>
+              <ol class="steps">
+                <li><strong>Prise de contact</strong> — le client appelle l'agence ou se présente à l'accueil.</li>
+                <li><strong>Qualification</strong> — budget, besoins, quartier, type de bien.</li>
+                <li><strong>Sélection</strong> — présentation de 2 à 3 biens correspondants.</li>
+                <li><strong>Visite</strong> — déplacement sur place, scène RP immersive.</li>
+                <li><strong>Négociation</strong> — offre, contre-offre, accord.</li>
+                <li><strong>Signature</strong> — contrat, virement, commission prélevée.</li>
+                <li><strong>Remise des clés</strong> — transfert de propriété, suivi.</li>
+              </ol>
+            </article>
+
+            <article id="d-regles" class="doc-block">
+              <span class="doc-num">07</span>
+              <h2 class="h2">Règlement interne</h2>
+              <ul class="ticklist ticklist--rules">
+                <li>Tenue correcte exigée en représentation (costume aux couleurs de la maison).</li>
+                <li>Aucune vente hors RP ou sans visite préalable.</li>
+                <li>Respect strict des grilles de commission, pas de tarif « à la tête du client ».</li>
+                <li>Confidentialité totale sur les transactions et les clients.</li>
+                <li>Toute transaction est consignée dans le registre de l'agence.</li>
+                <li>Interdiction d'utiliser les biens de l'agence à titre personnel sans accord.</li>
+              </ul>
+            </article>
+
+            <article id="d-roadmap" class="doc-block">
+              <span class="doc-num">08</span>
+              <h2 class="h2">Feuille de route</h2>
+              <div class="timeline">
+                <div class="tl"><span class="tl__phase">Phase 1 · Lancement</span><p>Ouverture de l'agence, recrutement initial, premiers mandats, mise en ligne du catalogue.</p></div>
+                <div class="tl"><span class="tl__phase">Phase 2 · Expansion</span><p>Couverture de tous les quartiers premium, gestion locative, partenariats serveur.</p></div>
+                <div class="tl"><span class="tl__phase">Phase 3 · Promotion</span><p>Achat de terrains, construction sur-mesure, programmes neufs.</p></div>
+                <div class="tl"><span class="tl__phase">Phase 4 · Institution</span><p>Marque incontournable de l'État, événements, ventes aux enchères de prestige.</p></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CATALOGUE                                                       -->
+    <!-- ============================================================= -->
+    <section class="tab" id="catalogue">
+      <div class="page-hero page-hero--compact">
+        <div class="container">
+          <p class="kicker kicker--center">Biens à vendre</p>
+          <h1 class="page-hero__title">Le Catalogue</h1>
+          <p class="page-hero__sub">Villas, penthouses, maisons et appartements sélectionnés par nos agents à travers tout Los Santos.</p>
+        </div>
+      </div>
+
+      <div class="container section">
+        <!-- Filtres -->
+        <div class="filters" id="filters">
+          <div class="filters__search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input type="search" id="searchInput" placeholder="Rechercher un bien, un quartier…" />
+          </div>
+          <div class="filters__group" id="filterType"></div>
+          <div class="filters__right">
+            <button class="chip chip--fav" id="favFilter" title="Afficher mes favoris">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.4 8.6 1.8 5 5.2 5c2 0 3.3 1.2 3.8 2.2C9.5 6.2 10.8 5 12.8 5 16.2 5 17.6 8.6 16 11.8 13.5 16.4 12 21 12 21z"/></svg>
+              Favoris
+            </button>
+            <select class="select" id="sortSelect">
+              <option value="featured">Trier : à la une</option>
+              <option value="price-asc">Prix croissant</option>
+              <option value="price-desc">Prix décroissant</option>
+              <option value="surface-desc">Surface décroissante</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid--cards" id="catalogueGrid"></div>
+        <p class="empty" id="catalogueEmpty" hidden>Aucun bien ne correspond à ce filtre.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- STOCKAGE                                                        -->
+    <!-- ============================================================= -->
+    <section class="tab" id="stockage">
+      <div class="page-hero page-hero--compact">
+        <div class="container">
+          <p class="kicker kicker--center">Hangars &amp; entrepôts</p>
+          <h1 class="page-hero__title">Solutions de Stockage</h1>
+          <p class="page-hero__sub">Hangars, entrepôts logistiques, garages et box sécurisés à travers tout l'État — du box individuel au hangar aéroportuaire.</p>
+        </div>
+      </div>
+
+      <div class="container section">
+        <div class="grid grid--parcels" id="storageGrid"></div>
+      </div>
+
+      <div class="cta-band">
+        <div class="container cta-band__inner">
+          <h2>Besoin d'un espace sur-mesure&nbsp;?</h2>
+          <p>Volumes XXL, accès poids lourds, sécurité renforcée : nous trouvons le hangar adapté à votre activité.</p>
+          <button class="btn btn--gold" data-tab="contact">Réserver un hangar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- SERVICES                                                        -->
+    <!-- ============================================================= -->
+    <section class="tab" id="services">
+      <div class="page-hero page-hero--compact">
+        <div class="container">
+          <p class="kicker kicker--center">Ce que nous faisons</p>
+          <h1 class="page-hero__title">Nos Services</h1>
+          <p class="page-hero__sub">De l'estimation à la remise des clés, une prise en charge complète et haut de gamme.</p>
+        </div>
+      </div>
+
+      <div class="container section">
+        <div class="services" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- ÉQUIPE                                                          -->
+    <!-- ============================================================= -->
+    <section class="tab" id="equipe">
+      <div class="page-hero page-hero--compact">
+        <div class="container">
+          <p class="kicker kicker--center">Les visages de la maison</p>
+          <h1 class="page-hero__title">L'Équipe</h1>
+          <p class="page-hero__sub">Des agents triés sur le volet, formés à l'excellence et au sens du service.</p>
+        </div>
+      </div>
+      <div class="container section">
+        <div class="team" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CONTACT                                                         -->
+    <!-- ============================================================= -->
+    <section class="tab" id="contact">
+      <div class="page-hero page-hero--compact">
+        <div class="container">
+          <p class="kicker kicker--center">Prendre rendez-vous</p>
+          <h1 class="page-hero__title">Contact &amp; Candidature</h1>
+          <p class="page-hero__sub">Un bien à vendre, un achat en tête, ou l'envie de rejoindre l'équipe ? Écrivez-nous.</p>
+        </div>
+      </div>
+
+      <div class="container section">
+        <div class="contact-layout">
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <label>Nom complet (RP)<input type="text" name="name" required placeholder="Prénom Nom" /></label>
+              <label>Téléphone / Discord<input type="text" name="phone" placeholder="555-0142" /></label>
+            </div>
+            <label>Objet
+              <select name="subject">
+                <option>Acheter un bien</option>
+                <option>Vendre un bien</option>
+                <option>Louer / acheter un hangar</option>
+                <option>Rejoindre l'agence</option>
+                <option>Autre demande</option>
+              </select>
+            </label>
+            <label>Votre message<textarea name="message" rows="5" required placeholder="Décrivez votre projet, votre budget, le quartier visé…"></textarea></label>
+            <button type="submit" class="btn btn--gold">Envoyer la demande</button>
+            <p class="form__note" id="formNote" hidden>✓ Demande enregistrée. Un agent Dynasty&nbsp;8 vous recontacte sous 48h (RP).</p>
+          </form>
+
+          <aside class="contact-info">
+            <h3 class="h3">L'agence</h3>
+            <ul class="info-list">
+              <li><span>Siège</span>Portola Drive, Rockford Hills</li>
+              <li><span>Standard</span>555-DYNASTY (555-3962789)</li>
+              <li><span>Horaires</span>Lun – Dim · 9h – 23h (HRP variable)</li>
+              <li><span>Discord</span>discord.gg/dynasty8</li>
+            </ul>
+            <div class="map-mock"><span>Rockford Hills · Los Santos</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark">D8</span>
+        <p>DYNASTY 8 · REAL ESTATE</p>
+        <small>L'immobilier de dynastie. — Los Santos, San Andreas.</small>
+      </div>
+      <div class="footer__cols">
+        <div><h5>Navigation</h5><a href="#" data-tab="accueil">Accueil</a><a href="#" data-tab="catalogue">Catalogue</a><a href="#" data-tab="stockage">Stockage</a><a href="#" data-tab="services">Services</a></div>
+        <div><h5>Agence</h5><a href="#" data-tab="dossier">Le Dossier</a><a href="#" data-tab="equipe">Équipe</a><a href="#" data-tab="contact">Contact</a></div>
+        <div><h5>Légal (RP)</h5><a href="#" data-tab="accueil">Mentions</a><a href="#" data-tab="accueil">Confidentialité</a><a href="#" data-tab="accueil">Conditions</a></div>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>© <span id="year"></span> Dynasty 8 Real Estate — Univers fictif RP. Sans lien avec une entité réelle.</span>
+      <span>Conçu comme un site vitrine clé en main.</span>
+    </div>
+  </footer>
+
+  <!-- ====================== MODALE BIEN ====================== -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true">
+      <button class="modal__close" data-close aria-label="Fermer">×</button>
+      <div class="modal__body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
